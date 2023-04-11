@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/rest.css">
+    <link rel="stylesheet" href="CSS/test.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <div class="wrap">
+        <div class="header clearfix">
+          <div class="logo">
+            <a href="#"><img src="./Images/banner_logo.png"></a>
+          </div>
+          <div class="menu clearfix">
+            <ul class="menu-list clearfix">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT</a></li>
+                <li><a href="products.html">SHOP</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="reservarion.html">BOOK</a></li>
+
+            </ul>
+            <a href="#" class="showmenu">MENU</a> -->
+    <!--.showmenu 需寫在.menu內才可同行。如果在.menu外會變區塊元素變上而下排列-->
+          <!-- </div>
+        </div> -->
+        <!-- <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cupiditate, nobis voluptas error doloribus! Cum veritatis beatae consequatur eum minus quia tempora dolor sit quas illo explicabo sapiente in, optio debitis repellat delectus officia error, pariatur facere. Saepe dicta, harum veritatis molestiae repellendus vero doloremque nostrum ab quas maxime ipsa blanditiis soluta similique repudiandae, vitae sint beatae excepturi alias ea neque totam cum labore placeat natus. Est reprehenderit sunt pariatur perferendis doloribus, nostrum nemo porro beatae dolorem. Perspiciatis, nostrum, optio.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore vitae facilis natus sapiente qui non, nam nemo ipsa nostrum, illo necessitatibus nulla ad amet eaque! Recusandae voluptas officia aperiam temporibus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eos quos dolorem consectetur molestias minima. Consequatur corrupti nostrum vitae cupiditate explicabo sed magnam, temporibus laudantium aliquid quasi deleniti et cumque voluptatibus delectus iure. Repellendus autem nihil unde vero quos iste sit inventore nisi facere possimus nesciunt mollitia consequatur voluptatum quasi nemo libero quas ratione, ullam laboriosam itaque veniam deleniti veritatis, expedita facilis! Dicta, placeat pariatur? Temporibus ipsa quasi fugit optio quidem dolorum eveniet, quisquam ipsam eaque omnis, possimus, laboriosam. Perferendis saepe in quibusdam obcaecati assumenda, voluptas voluptate, illo ratione id a adipisci reiciendis qui quo debitis cumque, delectus expedita eos.
+          </p>
+        </div> -->
+  
+
+    <div class="wrap1">
+      <div class="banner">
+        <video autoplay muted loop>
+          <source src="https://joy1.videvo.net/videvo_files/video/free/2014-04/large_watermarked/Pouring_Coke_2_Videvo_preview.mp4" type="video/mp4">
+        </video>
+        <h2>Tipsy Tumbler</h2>
+      </div>
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script> </script>
+
+<script>
+
+$(document).ready(function() {
+	$('.showmenu').on('click',  function(e) {
+		e.preventDefault();
+		$('.menu-list').toggleClass('active');
+	});
+});
+</script>
+
+</body>
+</html>

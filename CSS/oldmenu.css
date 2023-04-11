@@ -1,0 +1,292 @@
+@import url(./banner.css);
+body{
+    background-color: #FFFAF0;
+    font-family: 'Vidaloka', serif;
+    line-height: 1.6;
+}
+
+a:hover{ 
+  color: #BF8D50; 
+}
+
+
+/* ...... nav big picutre ...... */
+nav{
+  background-image: url(../Images/menu/Topbg.png);
+  width: 100%;
+  margin-bottom: 90px;
+}
+
+
+/* ...... input ...... */
+
+#tab {
+  width: 1200px;
+  margin: 0 auto;
+  background: #3C5F4E;
+  /* border: solid 1px #3C5F4E; */
+}
+
+/* 頁籤ul */
+#tab > ul {
+  /* overflow: hidden; */
+  margin:0 auto;
+  padding: 40px 20px 40px 20px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#tab > ul > li {
+  list-style-type: none;
+}
+
+/* DRINK 頁籤上的文字 */
+#tab > ul > li > a { 
+  text-decoration: none;
+  font-size: 50px;
+  color: #BF8D50;
+  float: left;
+  padding-left: 10px;
+}
+
+/*頁籤di內容*/
+#tab > div {
+  clear: both;
+  padding: 50px 15px;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+
+.tab-content-1 li {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-size: cover;
+  height: 295px;
+  width: 996px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  margin-top: 50px;
+
+}
+
+.tab-content-1 img {
+  display: block;
+}
+
+/* .tab-content-1 ul li:nth-child(2n-1) img {
+  padding: 3px 6px 0 0;
+  cursor: pointer;
+} */
+
+
+.tab-content-1 li:nth-child(2n) {
+  padding: 1px 0 0 15px;
+  cursor: pointer;
+}
+
+.tab-content-1 ul li:nth-child(2n-1) {
+  padding: 2px 15px 0 0;
+}
+
+.tab-content-1 li:nth-child(1) {
+  background-image: url(../Images/menu/bg1.png);
+  background-repeat: no-repeat;
+}
+
+.tab-content-1 li:nth-child(2) {
+  background-image: url(../Images/menu/bg2.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-1 li:nth-child(3) {
+  background-image: url(../Images/menu/bg3.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-1 li:nth-child(4) {
+  background-image: url(../Images/menu/bg4.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-1 li:nth-child(5) {
+  background-image: url(../Images/menu/bg5.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-1 .text {
+  order: -1;
+  padding: 0 10px;
+  /* text-shadow: 1px 1px rgb(245, 245, 245); */
+} 
+
+.tab-content-1 h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  color: rgb(16, 16, 16);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-content-1 p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: rgb(16, 16, 16);
+  padding: 0 30px;
+}
+
+/* Food 頁籤div內容*/
+
+#tab > div {
+  clear: both;
+  padding: 0px 15px;
+  padding-top: 50px;
+  overflow: hidden;
+  visibility: hidden;
+  background-color: #3C5F4E;
+}
+
+
+.tab-content-2 li {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-size: cover;
+  height: 295px;
+  width: 996px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+
+}
+
+.tab-content-2 img {
+  display: block;
+}
+
+
+.tab-content-2 li:nth-child(2n), .tab-content-1 li:nth-child(2n) { 
+  padding: 1px 0 0 15px;
+  cursor: pointer;
+}
+
+.tab-content-2 ul li:nth-child(2n-1) {
+  padding: 2px 15px 0 0;
+}
+
+.tab-content-2 li:nth-child(1) {
+  background-image: url(../Images/menu/bg1.png);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+.tab-content-2 li:nth-child(2) {
+  background-image: url(../Images/menu/bg2.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-2 li:nth-child(3) {
+  background-image: url(../Images/menu/bg3.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-2 li:nth-child(4) {
+  background-image: url(../Images/menu/bg4.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-2 li:nth-child(5) {
+  background-image: url(../Images/menu/bg5.png);
+  background-repeat: no-repeat;
+
+}
+
+.tab-content-2 .text {
+  order: -1;
+  padding: 0 10px;
+} 
+
+.tab-content-2 h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: -0.015em;
+  color: rgb(16, 16, 16);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tab-content-2 p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: rgb(16, 16, 16);
+  padding: 0 30px;
+}
+
+
+/*第一筆的底色*/
+span:target ~ #tab > ul li:first-child a {
+  background: #3C5F4E;
+}
+
+span:target ~ #tab > div:first-of-type {
+  visibility: hidden;
+  height: 0;
+  padding: 0 15px;
+}
+
+/*頁籤變換&第一筆*/
+span ~ #tab > ul li:first-child a,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"]{
+  background: #BEC7C0;
+  border-radius: 5px;
+
+}
+
+span ~ #tab > ul li:first-child a::before,
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"]::before,
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"]::before{
+  background-color: rgb(21, 20, 20);
+  height: 1800px;
+}
+
+/*頁籤內容顯示&第一筆*/
+span ~ #tab > div:first-of-type,
+#tab-1:target ~ #tab > div.tab-content-1,
+#tab-2:target ~ #tab > div.tab-content-2 {
+  visibility: visible;
+  height: 1800px;
+  background: #3C5F4E;
+}
+
+span {
+  display: none;
+}
+
+#tab a{
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+

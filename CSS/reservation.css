@@ -1,0 +1,545 @@
+@import url(./banner.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #d7d9da;
+    font-family: 'Vidaloka', serif;
+    line-height: 1.6;
+}
+
+
+/* ...... top banner ...... */
+
+.wrapper{
+    width: 100%;
+}
+
+.wrap{
+    background-color: transparent;
+    /* border:1px  solid red; */
+    position: absolute;
+    width: 90%;
+    mix-blend-mode:exclusion;
+    padding-top: 10px;
+    overflow: hidden;
+    /* margin: 0 autox; */
+    padding-left: 100px;
+}
+
+.menu-list li{
+    float:left;
+}
+
+.wrap .header{
+    background-color:transparent; 
+}
+
+.wrap .menu-list a {
+    text-shadow: 2px 2px 2x rgb(255, 255, 255);
+    font-weight: 1000;
+    color: #bc955c ;
+}
+
+/* ...... video ....... */
+.wrap1{
+	margin:0;
+	padding:0;
+	/* Google font 字體 */
+    font-family: 'Poppins', sans-serif;
+}
+  .banner{
+	width: 100%;
+	height: 85vh;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+  }
+  .banner video{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	object-fit: cover;
+	font-weight: bold;
+  }
+  .banner h2:nth-child(2){
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 80%;
+	font-size: 26vw;
+	text-align: center;
+	line-height:60vh;
+	 /* 字全大寫 */
+	text-transform:uppercase;
+	background-color: black;
+	/* mix-blend-mode:screen; */
+    /* background-clip: text; */
+    /* color: transparent; */
+    mix-blend-mode:exclusion;
+  }
+  .banner h2:nth-child(3){
+    position: absolute;
+	top: 30vh;
+	left:0;
+	width: 100%;
+	height: 60%;
+	font-size: 20vw;
+	text-align: center;
+	line-height:60vh;
+	 /* 字全大寫 */
+	text-transform:uppercase;
+	background-color: black;
+	/* mix-blend-mode:screen; */
+    /* color: transparent;
+    background-clip: text; */
+    mix-blend-mode:exclusion;
+  }
+  
+  
+/* ...... book a table ...... */
+
+section {
+    /* background-color: rgba(190, 199, 192, 1); */
+    width: 100%;
+    height: 70vh;
+    border: 1px solid rgba(190, 199, 192, 0);
+    background-image: url(../Images/reservation/table.png);
+}
+
+.inner_section{
+    /* background-color: #B8C0BA; */
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    width: 70%;
+    height: 350px;
+    margin: 0 auto;
+    /* line-height: 80vh; */
+    margin-top: 8vw;
+}
+section ul {
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1.5% 3%;
+    align-content:center;
+    margin: 0 auto;
+}
+
+.section li {
+    background-color: whitesmoke;
+    height: 80px;
+    width: 23%;
+    padding-left: 5px;
+}
+
+section h2 {
+    color: #bc955c;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 3.5vw;
+    margin-bottom: 2%;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+section  select{
+    background-color: #003E52 ;
+    color:  #bc955c ;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 180px;
+    height: 55px;
+
+}
+#date-input{
+    background-color: #003E52 ;
+    color:  #bc955c ;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+}
+
+
+.button input{
+    background-color: #003E52 ;
+    color:  #bc955c ;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+}
+
+.icon2 a:hover{
+    cursor:pointer;
+}
+
+.button input:hover {
+    background-color: #3e8e41;
+    cursor:pointer;
+}
+
+.button input:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* ...... google map ...... */
+
+/* .map_wrapper {
+    background-color: #bc955c;
+} */
+
+.google-map {
+    width: 80%;
+    padding-bottom: 50%;
+    position: relative;
+    clear:both;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/*  bottom article */
+.article1 {
+    background-color: #003E52;
+}
+
+.info {
+    padding-top: 3%;
+    /* height: 300px; */
+
+}
+
+.info ul{
+    display: flex;
+    Justify-content: center;
+    /* align-items: center; */
+    justify-content:  space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.info h3 {
+    color: #BF8D50;
+    margin-bottom: 2%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.info p{
+    color: #BF8D50;
+    padding-top: 2%;
+    text-align: center;
+}
+
+/* icons */
+
+.icon2 {
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    clear:both;
+    padding-bottom: 3%;
+}
+
+.icon2 h4{
+    color: #BF8D50;
+    font-size: 32px;
+    text-align: left;
+    padding-top: 10px;
+    font-family: 'Grape Nuts', cursive;
+    letter-spacing: 5px;
+    text-indent: 60px;
+
+}
+
+.icon2 p{
+    color: #BF8D50;
+    font-size: 32px;
+    text-align: left;
+    padding-top: 10px;
+    font-family: 'Grape Nuts', cursive;
+    letter-spacing: 5px;
+    text-indent: 160px;
+    display: inline-block;
+}
+
+.icon2 ul{
+    float: right;
+    padding-right: 50px;
+}
+
+.icon2 li{
+    float: left;
+    padding: 5px;
+}
+
+.icon2 a{
+    display: block;
+}
+
+.icon2 a:hover{
+    cursor:pointer;
+}
+
+
+/* button for booking */
+.container select, .button input, #date-input{
+    border: none;
+    text-decoration: none;
+    color: white ;
+    font-weight: bolder;
+    background-color: #003E52;
+    padding: 6px 0px;
+    font-size: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:10%;
+    width: 150px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    border: 5px solid #003E52 ; 
+   }
+
+   .container select option:first-child {
+    text-align: center;
+    }
+
+   #date-input{
+    width: 140px;
+
+}
+
+#date-input::placeholder {
+    color: white ;
+  }
+
+
+.button input:hover {
+    background-color: #003E52;
+    cursor:pointer;
+    color:#bc955c ;
+    border: 5px solid #bc955c ;    
+}
+
+
+
+
+@media(max-width: 415px){
+
+    .wrapper{
+        background-color: #003E52;
+        width: 100%;
+    }
+
+    .wrap{
+        width: 100%;
+        padding: 0;
+        background-color: #003E52;
+        mix-blend-mode:unset;
+
+    }
+
+
+    .wrap .menu-list a {
+        text-shadow: 2px 2px 2x rgb(255, 255, 255);
+        font-weight: 1000;
+        color: #bc955c ;
+    }
+
+    .banner h2:nth-child(2){
+        top:0;
+        left:0;
+        width: 100%;
+        height: 60%;
+        line-height:50vh;
+      }
+
+      .banner h2:nth-child(3){
+        top: 10vh;
+        left:0;
+        width: 100%;
+        height: 50%;
+        line-height:50vh;
+      }
+
+    .banner{
+        height: 50vh;
+    }
+
+
+    .inner_section{
+        backdrop-filter:none;
+        position: relative;
+        z-index: 5 ;
+
+    }
+    .inner_section h2{
+        font-size: 28px;;
+        text-shadow: none;
+        color:#32281a ;
+        position: absolute;
+        top: 53px;
+        left: 14px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    section ul{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    section ul li{
+        width: 150px;
+        margin: 10px auto;
+        z-index: 5;
+    }
+
+    section input {
+        width: 150px;
+        margin: 10px auto;
+        z-index: 5;
+    }
+
+    #date-input {
+        width: 130px;
+        margin: 10px auto;
+        z-index: 5;
+    }
+
+    section ul li:nth-child(1){
+        margin-top: 22vh ;
+    }
+
+    .masked-element {
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+      }
+      
+      .masked-element::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(226, 226, 226, 0.526); /* 半透明黑色遮罩层 */
+        z-index: 1;
+      }
+      
+/* ............. bottom section .......... */
+    .article1  ul{
+        display: flex;
+        Justify-content: center;
+        justify-content:space-evenly;
+        width: 70%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    
+    }
+    .article1 li{
+        flex-grow: 1;
+        padding-bottom: 30px;
+    }
+    .info li{
+        width: 100%;
+
+    }
+    
+    .article1   h3 {
+        color: #BF8D50;
+        margin-bottom: 2%;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .article1  p{
+        color: #BF8D50;
+        padding-top: 2%;
+        text-align: center;
+    }
+
+    .icon2 li:nth-child(4) {
+        display: none;
+    }
+
+    .icon2 h4 {
+        color: whitesmoke;
+        text-shadow: 1px 1px #BF8D50;
+        font-size: 5vw;
+        text-align: center;
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
+        padding-right: 20px;
+   }
+
+   .icon2 p {
+    color: whitesmoke;
+    text-shadow: 1px 1px #BF8D50;
+    font-size: 5vw;
+    text-align: center;
+    padding-right: 20px;
+    
+   }
+   .container select, .button input, #date-input{
+    border: none;
+    text-decoration: none;
+    color: white ;
+    font-weight: bolder;
+    background-color: #003E52 ;
+    padding: 12px 0px;
+    font-size: 12px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:5%;
+    width: 150px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    /* border: 5px solid #bc955c;  */
+   }
+
+   .container select option:first-child {
+    text-align: center;
+    }
+
+   #date-input{
+    width: 150px;
+    padding: 13px 0px;
+
+}
+
+#date-input::placeholder {
+    color: white ;
+  }
+
+  
+
+}

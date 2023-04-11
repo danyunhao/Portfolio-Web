@@ -1,0 +1,105 @@
+
+
+body{
+  font-family: 'Vidaloka', serif;
+  line-height: 1.6;
+  color: #bc955c ;
+}
+
+.wrap{
+background-color: #003E52;
+max-width: 980%;
+height: 90px;
+margin: 0 auto;
+z-index: 5;
+}
+
+/* .clearfix:after{
+content: '';
+display: table;
+clear: both;
+} */
+.logo{
+  padding-left: 1vw;
+}
+.header{
+background-color: #003e52db;
+position: relative;
+}
+
+.logo a{
+float:left;
+
+}
+.menu-list{
+float:right;
+}
+.menu-list li{
+float:left;
+}
+.menu-list a{
+display: block;
+text-decoration: none;
+font-weight: 700;
+color: #bc955c ;
+padding: 1em;
+font-size: 26px;
+}
+.menu-list a:hover{
+color: #4bc2c5;
+}
+.showmenu{
+display: none;
+float: right;
+text-decoration: none;
+color:  #bc955c;
+font-weight: 500;
+padding:1em;
+  font-size: 25px;
+}
+
+@media(max-width: 415px){
+
+.menu-list{		
+  /*隱藏選單開始*/
+  max-height: 0;
+  overflow: hidden;
+  /*隱藏選單end*/
+  position: absolute;/*追隨.header*/
+  /*讓選單從左到右延伸start*/
+  right: 0;
+  left: 0;
+  /*讓選單從左到右延伸end*/
+  top:90.59px;
+  /*把menu-list位置移到.header下方。點擊menu滑出/因沒設header高度，所以用開發者工具看高多少*/
+  z-index:10;
+  transition: all .8s;
+}
+.menu-list li{
+  float:none;
+  border-bottom:  1px solid #003e52db;
+  background:#f5f4e8;
+}
+.menu-list a{
+  display: block;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bc955c ;
+  padding: 1em;
+  font-size: 20px;
+}
+.showmenu{
+  display: block;
+}
+/*jQ點擊後動態在 body 加上 class*/
+.menu-list.active{
+  max-height: 465px;
+}
+}
+/* .content{
+padding: 5% 6%;
+}
+.content p{
+line-height: 1.8;
+margin-bottom: 1.5em;
+} */

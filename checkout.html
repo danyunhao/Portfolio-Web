@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/rest.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,200&family=Grape+Nuts&family=Gugi&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="./CSS/checkout.css">
+    
+    <title>Check_Out</title>
+</head>
+<body>
+
+    <!-- ...... top banner ...... -->
+
+    <header>
+      <img src="./Images/checkout/logoicon.png" alt="">
+
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT</a></li>
+        <li><a href="products.html">SHOP</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="reservarion.html">BOOK</a></li>
+    </ul>
+  </header>
+
+
+  <div class="wrapper"> 
+
+      <!-- right side -->
+
+    <div class="rightside">
+          <div class="box1">
+            <ul>
+              <li><img src="./Images/checkout/item.png" alt="">
+              </li>
+              <li>
+                <h5>Stockholms Brannri  
+                  Dry Gin 500ml </h5>
+              </li>
+              <li>
+                <p>$1200</p>
+              </li>
+            </ul>
+          </div>
+          <div class="box2">
+            <ul>
+              <li>
+                <h3>商品總金額</h3>
+                <!-- <h3>運費總金額</h3> -->
+              </li>
+              <li>
+                <p>$1200</p>
+                <!-- <p>$99</p> -->
+              </li>
+            </ul>
+          </div>
+          <div class="box3">
+              <ul>
+                <li>
+                  <h3>商品總金額</h3>
+                </li>
+                <li>
+                  <p>$1299</p>
+                </li>
+              </ul>
+          </div>
+          <input type="button" value="結帳" onclick="location.href='https:www-stage.ecpay.com.tw/Announcement/DetailAnnouncement?nID=1268'">
+    </div>
+
+   <!-- left side -->
+
+   <div class="leftside">
+
+     <section>
+       <h1>Tispy Tumbler</h1>
+     </section>
+ 
+     <div class="section1">    <!-- payment method -->
+       <h2>付款方式 </h2>
+       <hr size="2px" width="100%">
+       <div class="container">
+         <select>
+             <option>信用卡</option>
+             <option>VISA</option>
+             <option>MASTER</option>
+         </select>
+         <img src="./Images/checkout/payment.png" alt="">
+       </div>
+         <p>下一步將連至第三方金流服務進行刷卡，你所有的交易資訊皆獲得安全保護。</p>
+       </div>
+ 
+       <div class="section1">   <!-- reciept -->
+         <h2>發票選項</h2>
+         <hr size="2px" width="100%">
+         <p>以下資訊只用於開立發票，並不會在其他頁面顯示。<br>
+          發票一經開立後不可更改，請確認𧶘訊是否都填寫𡈼確喔！
+    
+         </p>
+         <h4>姓名</h4>
+         <input type="text" name="欄位名稱">
+         <div class="container2">
+           <h4>發票類型</h4>
+           <select>
+               <option>手機載具</option>
+               <option>紙本發票</option>
+               <option>統一編號</option>
+           </select>
+         </div> 
+       </div>
+   
+       <div class="section1">   <!-- personal info -->
+         <h2>收件資訊</h2>
+         <hr size="2px" width="100%">
+         <h4>姓名</h4>
+         <input type="text" name="欄位名稱">
+         <h4>手機號碼</h4>
+         <input type="text" name="欄位名稱">
+         <h4>收件地址</h4>
+         <input type="text" name="欄位名稱">
+         <h4>Email</h4>
+         <input type="text" name="欄位名稱">
+       </div>
+   </div>     <!-- leftside ends -->
+  </div>    <!-- wrapper ends -->
+
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/rest.css">
+    <link rel="stylesheet" href="CSS/slick.css">
+    <link rel="stylesheet" href="CSS/test2.css">
+    <title>My Now Amazing Webpage</title>
+</head>
+<body>
+
+    <div class="slide">
+
+                <img  src="./Images/products/pic2.png">
+                <img  src="./Images/products/pic3.png">
+                <img  src="./Images/products/pic4.png">
+                <img src="./Images/products/pic5.png">
+                <img src="./Images/products/pic6.png">
+                <img src="./Images/products/pic7.png">
+
+    </div>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="JS/slick.min.js"></script>
+        <script >
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slider")[0].getElementsByTagName("img");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active");
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].classList.add("active");
+  setTimeout(showSlides, 5000);
+}
+
+        </script>
+
+</body>
+</html>
