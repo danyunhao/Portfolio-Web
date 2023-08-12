@@ -1,198 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/rest.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,200&family=Grape+Nuts&family=Gugi&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="./CSS/reservation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <title>BOOK</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/rest.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,200&family=Grape+Nuts&family=Gugi&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./CSS/reservation.css">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
 
-    <div class="wrapper">
+        <title>BOOK</title>
+    </head>
+    <body>
 
-        <!-- ...... top banner ...... -->
-        <div class="wrap">
-            <div class="header clearfix">
-              <div class="logo">
-                <a href="index.html"><img src="./Images/banner_logo.png"></a>
-              </div>
-              <div class="menu clearfix">
-                <ul class="menu-list clearfix">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="aboutus.html">ABOUT</a></li>
-                    <li><a href="products.html">SHOP</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="reservarion.html">BOOK</a></li>
-    
-                </ul>
-                <a href="#" class="showmenu">MENU</a>
-              </div>
+        <div class="wrapper">
+
+            <!-- ...... top banner ...... -->
+            <div class="wrap">
+                <div class="header clearfix">
+                    <div class="logo">
+                        <a href="index.html"><img src="./Images/banner_logo.png"></a>
+                    </div>
+                    <div class="menu clearfix">
+                        <ul class="menu-list clearfix">
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li>
+                                <a href="aboutus.html">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="products.html">SHOP</a>
+                            </li>
+                            <li>
+                                <a href="menu.html">MENU</a>
+                            </li>
+                            <li>
+                                <a href="reservarion.html">BOOK</a>
+                            </li>
+
+                        </ul>
+                        <a href="#" class="showmenu">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </a>
+
+                    </div>
+                </div>
             </div>
-        </div>
-    
-      
+
             <!-- ...... welcome video ...... -->
-    
+
             <div class="wrap1">
                 <div class="banner">
-                  <video autoplay muted loop>
-                    <source src="https://joy1.videvo.net/videvo_files/video/free/2014-04/large_watermarked/Pouring_Coke_2_Videvo_preview.mp4" type="video/mp4">
-                  </video>
-                  <h2>Tipsy</h2>
-                  <h2>Tumbler</h2>
+                    <video autoplay="autoplay" muted="muted" loop="loop">
+                        <source
+                            src="https://joy1.videvo.net/videvo_files/video/free/2014-04/large_watermarked/Pouring_Coke_2_Videvo_preview.mp4"
+                            type="video/mp4">
+                    </video>
+                    <h2>Tipsy</h2>
+                    <h2>Tumbler</h2>
                 </div>
-              </div>
-    
-    
+            </div>
+
             <!-- ...... book a table ...... -->
-        <section class="masked-element">
-            <div class="inner_section">
-                <h2 class="text">Book A Table Here</h2>
-                <ul>
-                    <li>
-                        <div class="container">
-                            <!-- <input type="number" id="num-people" name="num-people" min="1" max="10" placeholder="Enter number of people"> -->
-                            <select placeholder="Select a date">
-                                <option> 2 People</option>
-                                <option>1 人</option>
-                                <option>2 人</option>
-                                <option>3 人</option>
-                                <option>4 人</option>
-                                <option>5 人</option>
-                            </select>
-                    </li>
-                    <li>
-                        <div class="container">
-                            <input type="text" id="date-input" placeholder="Select a date"> </select>
-                            
-                            <!-- <select>
-                                <option>請選擇日期</option>
-                                <option>3月21號</option>
-                                <option>3月21號</option>
-                                <option>3月21號</option>
-                                <option>3月21號</option>
-                                <option>3月21號</option>
-                            </select> -->
-                    <li>
-                        <div class="container">
-                            <select>
-                                <option>NOW</option>
-                                <option>15:00</option>
-                                <option>16:00</option>
-                                <option>17:00</option>
-                                <option>18:00</option>
-                                <option>19:00</option>
-                            </select>
-                    </li>        
-                </ul>
-    
-                    <div class="button">
-                        <ul>
-                            <input type="button" value="BOOK" onclick="location.href='https://www.opentable.com/'">
-                        </ul>
+            <section class="masked-element">
+                <div class="inner_section">
+                    <h2 class="text">Book A Table Here</h2>
+                    <ul>
+                        <li>
+                            <div class="container">
+                                <!-- <input type="number" id="num-people" name="num-people" min="1" max="10"
+                                placeholder="Enter number of people"> -->
+                                <select placeholder="Select a date">
+                                    <option>
+                                        2 People</option>
+                                    <option>1 人</option>
+                                    <option>2 人</option>
+                                    <option>3 人</option>
+                                    <option>4 人</option>
+                                    <option>5 人</option>
+                                </select>
+                            </li>
+                            <li>
+                                <div class="container">
+                                    <input type="text" id="date-input" placeholder="Select a date">
+                                </select>
+
+                            <li>
+                                <div class="container">
+                                    <select>
+                                        <option>NOW</option>
+                                        <option>15:00</option>
+                                        <option>16:00</option>
+                                        <option>17:00</option>
+                                        <option>18:00</option>
+                                        <option>19:00</option>
+                                    </select>
+                                </li>
+                            </ul>
+
+                            <div class="button">
+                                <ul>
+                                    <input
+                                        type="button"
+                                        value="BOOK"
+                                        onclick="location.href='https://www.opentable.com/'">
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- google map -->
+                    <div class="map_wrapper">
+
+                        <div class="google-map">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1727.1902896026804!2d121.54479533291601!3d25.08232526157444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ad25ac559483%3A0xe45d470a92170d67!2sAlways%20Day%20One!5e0!3m2!1sen!2stw!4v1678941612227!5m2!1sen!2stw"
+                                width="600"
+                                height="450"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+
                     </div>
-            </div>       
-        </section>
-    
-            <!-- google map -->
-        <div class="map_wrapper">
 
-            <div class="google-map">
-    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1727.1902896026804!2d121.54479533291601!3d25.08232526157444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ad25ac559483%3A0xe45d470a92170d67!2sAlways%20Day%20One!5e0!3m2!1sen!2stw!4v1678941612227!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-            </div>
+                    <!-- article -->
+                    <div class="article1">
 
-        </div>
-        
-            <!-- article  -->
-        <div class="article1">
-            
-            <div class="info">
-                <ul>
-                    <li>
-                        <h3>Hours</h3>
-                        <p>Mon to Thurs</p>
-                        <p>6pm - 1am</p>
-                        <p>Fri - Sun</p>
-                        <p>6pm - 2am</p>
-                    </li>
-                    <li>
-                        <h3>Tipsy Tumbler</h3>
-                        <p>台北市大直區 <br>
-                            文湖路一段 168 號 2 樓</p>
-                    </li>
-                    <li>
-                        <h3>Contact</h3>
-                        <p>reservation@tipsy.com</p>
-                        <p>+886 9927777</p>
-                        <p>(02) 2567890</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="icon2">
-                        
-                <h4>Shake things up </h4>
-                <p>at our cocktail bar!</p>        
-        
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/"><img src="./Images/index/iconig.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/"><img src="./Images/index/iconfb.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://goo.gl/maps/x2ZQr8t8mDUUZPMs7"><img src="./Images/index/iconmap.png"></a>
-                    </li>
-                    <li>
-                        <a href="link address"><img src="./Images/index/icontel.png"></a>
-                    </li>
-        
-                </ul>
-            </div>
-        </div>
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <h3>Hours</h3>
+                                    <p>Mon to Thurs</p>
+                                    <p>6pm - 1am</p>
+                                    <p>Fri - Sun</p>
+                                    <p>6pm - 2am</p>
+                                </li>
+                                <li>
+                                    <h3>Tipsy Tumbler</h3>
+                                    <p>台北市大直區
+                                        <br>
+                                        文湖路一段 168 號 2 樓</p>
+                                </li>
+                                <li>
+                                    <h3>Contact</h3>
+                                    <p>reservation@tipsy.com</p>
+                                    <p>+886 9927777</p>
+                                    <p>(02) 2567890</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="icon2">
 
-    </div>      <!-- ...... wrapper ...... -->
+                            <h4>Shake things up
+                            </h4>
+                            <p>at our cocktail bar!</p>
 
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/"><img src="./Images/index/iconig.png"></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/"><img src="./Images/index/iconfb.png"></a>
+                                </li>
+                                <li>
+                                    <a href="https://goo.gl/maps/x2ZQr8t8mDUUZPMs7"><img src="./Images/index/iconmap.png"></a>
+                                </li>
+                                <li>
+                                    <a href="link address"><img src="./Images/index/icontel.png"></a>
+                                </li>
 
+                            </ul>
+                        </div>
+                    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+                </div>
+                <!-- ...... wrapper ...... -->
 
-    <script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-            $(document).ready(function() {
-                $('.showmenu').on('click',  function(e) {
-                    e.preventDefault();
-                    $('.menu-list').toggleClass('active');
-                });
-            });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    
-    <script>
-        // Get a reference to the input field
-        const dateInput = document.getElementById('date-input');
+                <script>
+                    $(document).ready(function () {
+                        document
+                            .querySelector('.showmenu')
+                            .addEventListener('click', function (e) {
+                                e.preventDefault();
+                                $('.menu-list').toggleClass('active');
+                            }, {passive: true});
+                    });
 
-        // Initialize flatpickr on the input field
-        const fp = flatpickr(dateInput, {
-        // Specify the date format
-        dateFormat: 'd-m-Y',
-  
-        // Specify any other options you want to use, such as disabling dates
-        disable: [
-        { from: '2023-04-15', to: '2023-04-19' },
-        { dates: ['2023-05-01', '2023-05-08', '2023-05-15'] }
-        ]
-        });
+                    
+                </script>
 
-    </script>
-    
+                <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-</body>
-</html>
+                <script>
+                    // Get a reference to the input field
+                    const dateInput = document.getElementById('date-input');
+
+                    // Initialize flatpickr on the input field
+                    const fp = flatpickr(dateInput, {
+                        // Specify the date format
+                        dateFormat: 'd-m-Y',
+
+                        // Specify any other options you want to use, such as disabling dates
+                        disable: [
+                            {
+                                from: '2023-04-15',
+                                to: '2023-04-19'
+                            }, {
+                                dates: ['2023-05-01', '2023-05-08', '2023-05-15']
+                            }
+                        ]
+                    });
+                </script>
+
+            </body>
+        </html>
